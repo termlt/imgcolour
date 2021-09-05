@@ -1,5 +1,4 @@
 import cv2
-import json
 import requests
 
 def colorp(event, x, y, flags, param):

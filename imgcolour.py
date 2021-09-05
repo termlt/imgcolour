@@ -3,7 +3,6 @@ import json
 import requests
 
 def colorp(event, x, y, flags, param):
-    
     if event == cv2.EVENT_LBUTTONDOWN:
         cBGR = image[y, x]
         cRGB=tuple(reversed(cBGR))

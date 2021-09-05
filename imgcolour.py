@@ -4,7 +4,7 @@ import requests
 def colorp(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
         cBGR = image[y, x]
-        cRGB=tuple(reversed(cBGR))
+        cRGB = tuple(reversed(cBGR))
 
         r = requests.get(f'https://www.thecolorapi.com/id?rgb=rgb{cRGB}').json()
         colour_rex = r['hex']['value']

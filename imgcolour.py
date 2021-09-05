@@ -8,7 +8,8 @@ def colorp(event, x, y, flags, param):
         print(f"RGB code: {cRGB} \n")
 
 
-image = cv2.imread("barack.jpg")  #Change the picture to yours
+img = cv2.imread("barack.jpg")  #Change the picture to yours
+image = cv2.resize(img, (800, 600))
 
 cv2.namedWindow('Color Picker')
 cv2.setMouseCallback('Color Picker', colorp)

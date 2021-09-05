@@ -5,7 +5,7 @@ def colorp(event, x, y, flags, param):
         cBGR = image[y, x]
         cRGB=tuple(reversed(cBGR))
 
-        print(f"RGB Value: {cRGB} \n")
+        print(f"RGB code: {cRGB} \n")
 
 
 image = cv2.imread("barack.jpg")  #Change the picture to yours
